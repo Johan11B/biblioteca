@@ -9,10 +9,9 @@ public class Libro {
     private boolean disponible;
     private String genero;
 
-    public Libro(String titulo, String autor, int id, int anioPublicacion, String genero) {
+    public Libro(String titulo, String autor, int anioPublicacion, String genero) {
         this.titulo = titulo;
         this.autor = autor;
-        this.id = id;
         this.anioPublicacion = anioPublicacion;
         this.disponible = true;
         this.genero = genero;
@@ -59,5 +58,10 @@ public class Libro {
         this.genero = genero;
     }
 
+    @Override
+    public String toString() {
+        return "📖 Título: " + titulo + " | ✍️ Autor: " + autor +
+                " | 📅 Año: " + anioPublicacion + " | 🎭 Género: " + genero;
     }
-}
+
+    }

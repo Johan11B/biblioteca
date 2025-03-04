@@ -17,6 +17,12 @@ public class Main {
 
                 System.out.print("Ingrese una opción: ");
 
+
+
+        Biblioteca.menu();
+
+
+
                 if (op >= 1 && op <= 6) {
                     break;
                 } else {

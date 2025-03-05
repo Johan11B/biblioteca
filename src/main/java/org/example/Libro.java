@@ -1,14 +1,14 @@
 package org.example;
-
+    //definiendo la clase libro
 public class Libro {
-
+    //Definiendo sus atributos (privados)
     private String titulo;
     private String autor;
     private int id;
     private int anioPublicacion;
     private boolean disponible;
     private String genero;
-
+    //Método constructor
     public Libro(String titulo, String autor, int anioPublicacion, String genero) {
         this.titulo = titulo;
         this.autor = autor;
@@ -17,7 +17,7 @@ public class Libro {
         this.genero = genero;
     }
 
-    // Getters y Setters
+    // Getters y Setters para acceder y modificar los atributos
     public String getTitulo() {
         return titulo;
     }
@@ -42,7 +42,7 @@ public class Libro {
         this.anioPublicacion = anioPublicacion;
     }
 
-    public boolean isDisponible() {
+    public boolean getDisponible() {
         return disponible;
     }
 
@@ -57,11 +57,11 @@ public class Libro {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
+    //Método que retorna la información de la instancia de la clase libro
     @Override
     public String toString() {
-        return "📖 Título: " + titulo + " | ✍️ Autor: " + autor +
-                " | 📅 Año: " + anioPublicacion + " | 🎭 Género: " + genero;
+        return "->Título: " + titulo + " | Autor: " + autor +
+                " |  Año: " + anioPublicacion + " |  Género: " + genero;
     }
 
     }
